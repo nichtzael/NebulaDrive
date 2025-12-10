@@ -8,10 +8,8 @@ public class MyLinkedList<T> {
     private NodeLL head;
     private NodeLL tail;
     private int size = 0;
-
     public int size() { return size; }
     public boolean isEmpty() { return size == 0; }
-
     public void add(T data) {
         NodeLL node = new NodeLL(data);
         if (head == null) head = tail = node;

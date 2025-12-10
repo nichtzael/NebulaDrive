@@ -1,12 +1,10 @@
 public class Node {
     public enum Type { USER, DISK, FOLDER, FILE }
-
     private String name;
     private String dateModified;
     private Type type;
     private int sizeKB; // only for files
     private MyLinkedList<Node> children; // for USER, DISK, FOLDER
-
     public Node(String name, String dateModified, Type type, int sizeKB) {
         this.name = name;
         this.dateModified = dateModified;
